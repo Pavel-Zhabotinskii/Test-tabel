@@ -1,0 +1,65 @@
+ <!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="en">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Test</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<!--Подключаем шрифты-->
+		<link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container _container">
+					<div class="header__logo logo">
+						<a href="/?">
+							<div class="logo__icon"></div>
+							<div class="logo__name">Test</div>
+						</a>
+					</div>
+					<a href="" class="header__anchor">Вход</a>
+				</div>
+			</header>
+			<main class="main">
+				<div class="main__container _container">
+					<div class="main__container_table">
+						<div class="main__user">
+							<h2>Пользователь:   <span>  </span></h2>
+						</div>
+						<div class="main__filter filter">
+							<button class="filter__orders btn_active">По заказам</button>
+							<button class="filter__status">По статусу</button>
+						</div>
+						<div class="main__tabel tabel">
+							<div class="tabel__row_initial row-initial">
+								<div>Место</div>
+								<div>Логин</div>
+								<div>Подтвержденные заказы</div>
+								<div>Статус</div>
+							</div>
+						</div>
+					</div>
+					<div class="main__registration registration">
+						<div class="registration__circle"></div>
+						<h2 class="registration__title">Вход</h2>
+						<form action="" class="registration__form">
+							<input class="regictration__email" autocomplete="off" type="email" required name="email" placeholder="Email">
+							<input type="password" class="registration__password" required placeholder="Пароль" name="password">
+							<button class="regictration__button" type="submit">Войти</button>
+						</form>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		
+		<script src="./js/script.js"></script>
+	</body>
+</html>
